@@ -141,6 +141,8 @@ impl Encoder {
         encoding: String,
         extend_special_tokens: &Option<HashMap<String, usize>>,
     ) -> RbResult<Self> {
+        dbg!(&encoding);
+        dbg!(&encoding.as_str());
         let mut constructor: CoreBPEConstructor = match encoding.as_str() {
             "gpt2" => Ok(CoreBPEConstructor::gpt2()),
             "r50k_base" => Ok(CoreBPEConstructor::r50k_base()),

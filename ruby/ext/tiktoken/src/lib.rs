@@ -284,7 +284,10 @@ impl Encoder {
 }
 
 pub fn get_encoding(encoding: String, extend_special_tokens: Value) -> RbResult<Encoder> {
-    let _extend_special_tokens: Option<HashMap<String, usize>> = deserialize(&extend_special_tokens).ok();
+    dbg!(&encoding);
+    dbg!(&extend_special_tokens);
+    let _extend_special_tokens: Option<HashMap<String, usize>> =
+        deserialize(&extend_special_tokens).ok();
 
     Encoder::from_encoding(
         encoding,

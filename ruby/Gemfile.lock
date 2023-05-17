@@ -10,7 +10,7 @@ GEM
     rake (13.0.6)
     rake-compiler (1.2.1)
       rake
-    rb_sys (0.9.68)
+    rb_sys (0.9.77)
 
 PLATFORMS
   arm64-darwin-21
